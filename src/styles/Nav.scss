@@ -1,0 +1,84 @@
+$navColor: #f1f8fc;
+
+@media screen and (max-width: 425px) {
+  .nav-link-responsive {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link-responsive {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .below992 {
+    display: block;
+    background-color: #f1f8fc;
+
+    .navbar-toggler {
+      border-color: #0074c7;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%230074c7' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-link-responsive {
+      color: $navColor;
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+
+    .nav-link-responsive:active {
+      color: #0074c7;
+    }
+  }
+
+  .nav-open {
+    background-color: #00497c;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .above992 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .above992 {
+    display: block;
+  }
+
+  .xlNav {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-link {
+    background-color: #0074c7;
+    color: $navColor;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 2px 30px;
+    transition: padding 0.3s;
+  }
+
+  .nav-link:hover {
+    background-color: #384050;
+    color: $navColor;
+    padding: 5px 35px;
+  }
+
+  .below992 {
+    display: none;
+  }
+}
