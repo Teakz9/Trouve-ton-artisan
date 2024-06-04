@@ -65,6 +65,7 @@ function Header() {
                 value={searchTerm}
                 onChange={handleSearchChange}
                 placeholder="Rechercher..."
+                className="searchCase"
               />
             </form>
           )}
