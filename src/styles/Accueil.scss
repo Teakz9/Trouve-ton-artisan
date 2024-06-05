@@ -141,12 +141,12 @@
   }
 
   .stepNumber {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .stepTitle {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .stepDesktop1 {
@@ -163,7 +163,7 @@
   }
 
   .stepDesktop3 {
-    height: 950px;
+    height: 1100px;
     width: 70%;
     margin: 0 auto;
     margin-top: 20px;
@@ -171,7 +171,7 @@
 
   .stepDesktop4 {
     height: 400px;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -186,6 +186,46 @@
   .smallBorder {
     height: 10px;
     width: 3.2rem;
+  }
+
+  .step {
+    margin-top: 25px;
+  }
+
+  .stepNumber {
+    font-size: 1.7rem;
+  }
+
+  .stepTitle {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .stepDesktop1 {
+    height: 300px;
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .stepDesktop2 {
+    height: 550px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .stepDesktop3 {
+    height: 900px;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .stepDesktop4 {
+    height: 250px;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .stepPhone,
