@@ -23,6 +23,16 @@ function Accueil() {
             alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
             className="stepPhone stepPhone1"
           />
+          <img
+            src="/src/images/step1Tablet.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepTablet stepTablet1"
+          />
+          <img
+            src="/src/images/step1Desktop.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepDesktop stepDesktop1"
+          />
         </section>
 
         <h2 className="stepNumber">Étape 2 :</h2>
@@ -32,6 +42,16 @@ function Accueil() {
             src="/src/images/step2Phone.png"
             alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
             className="stepPhone stepPhone2"
+          />
+          <img
+            src="/src/images/step2Tablet.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepTablet stepTablet2"
+          />
+          <img
+            src="/src/images/step2Desktop.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepDesktop stepDesktop2"
           />
         </section>
 
@@ -45,6 +65,16 @@ function Accueil() {
             alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
             className="stepPhone stepPhone3"
           />
+          <img
+            src="/src/images/step3Tablet.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepTablet stepTablet3"
+          />
+          <img
+            src="/src/images/step3Desktop.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepDesktop stepDesktop3"
+          />
         </section>
 
         <h2 className="stepNumber">Étape 4 :</h2>
@@ -54,6 +84,16 @@ function Accueil() {
             src="/src/images/step4Phone.png"
             alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
             className="stepPhone stepPhone4"
+          />
+          <img
+            src="/src/images/step4Tablet.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepTablet stepTablet4"
+          />
+          <img
+            src="/src/images/step4Desktop.png"
+            alt="Capture d'écran d'une image illustrant l'étape d'un fonctionnement de site internet"
+            className="stepDesktop stepDesktop4"
           />
         </section>
       </main>
