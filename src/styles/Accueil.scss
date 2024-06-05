@@ -1,0 +1,98 @@
+.smallBorder {
+  position: absolute;
+  background-color: #00497c;
+  height: 10px;
+  width: 2.5rem;
+  margin-left: 30px;
+}
+
+.stepNumber {
+  color: #00497c;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stepPhone {
+  border: #384050 solid 2px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .smallBorder {
+    height: 10px;
+    width: 2.5rem;
+  }
+
+  .step {
+    margin-top: 25px;
+  }
+
+  .stepNumber {
+    margin-left: 30px;
+    font-size: 1.3rem;
+  }
+
+  .stepTitle {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .stepPhone1 {
+    height: 200px;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .stepPhone2 {
+    height: 1100px;
+    width: 75%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .stepPhone3 {
+    height: 600px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .stepPhone4 {
+    height: 200px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .smallBorder {
+    height: 10px;
+    width: 2.8rem;
+  }
+
+  .stepPhone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1048px) {
+  .smallBorder {
+    height: 10px;
+    width: 3rem;
+  }
+}
+
+@media screen and (min-width: 1049px) {
+  .smallBorder {
+    height: 10px;
+    width: 3.2rem;
+  }
+}

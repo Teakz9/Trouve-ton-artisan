@@ -1,9 +1,20 @@
 @font-face {
-    font-family: 'Graphik';
-    src: url(./font/GRAPHIK-REGULAR-TRIAL.OTF) format('opentype');
+  font-family: "Graphik";
+  src: url(./font/GRAPHIK-REGULAR-TRIAL.OTF) format("opentype");
 }
 
-body{
-    background-color: #f1f8fc;
-    font-family: 'Graphik', sans-serif;
+body {
+  background-color: #f1f8fc;
+  font-family: "Graphik", sans-serif;
+}
+
+h1 {
+  color: #00497c;
+  font-weight: bolder;
+  margin-top: 5vw;
+  margin-left: 30px;
+}
+
+main {
+  line-height: 100px;
 }

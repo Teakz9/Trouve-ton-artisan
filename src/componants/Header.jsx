@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Nav from "./Nav";
@@ -43,11 +44,13 @@ function Header() {
 
   return (
     <header className="header">
-      <img
-        src="/src/images/Logo.png"
-        alt="Logo du site Trouve ton artisan coloré de différentes teintes de bleu."
-        className="logo"
-      />
+      <Link to="/">
+        <img
+          src="/src/images/Logo.png"
+          alt="Logo du site Trouve ton artisan coloré de différentes teintes de bleu."
+          className="logo"
+        />
+      </Link>
       <div className="searchAndMenu">
         <div className="searchBar">
           {windowWidth < 992 && (

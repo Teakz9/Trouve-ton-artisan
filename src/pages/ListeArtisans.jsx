@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import datas from "../datas.json";
 
+import Header from "../componants/Header";
+
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
@@ -39,6 +41,7 @@ export default function ListeArtisans() {
 
   return (
     <div className="listeArtisans">
+      <Header />
       <h1>
         Liste des artisans -{" "}
         {category ? `Catégorie : ${category}` : "Aucun filtre"}
