@@ -1,8 +1,14 @@
-.smallBorder {
+.smallBorder1 {
   position: absolute;
   background-color: #00497c;
-  height: 10px;
-  width: 2.5rem;
+  margin-left: 30px;
+}
+
+.smallBorder2 {
+  position: absolute;
+  background-color: #00497c;
+  height: 8px;
+  width: 2rem;
   margin-left: 30px;
 }
 
@@ -26,50 +32,119 @@
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0px 0px 15px rgba(black, 0.5);
+  border-radius: 30px;
+
+  .avatarIcon {
+    object-fit: contain;
+  }
+
+  .card-title {
+    text-align: center;
+    color: #0074c7;
+    font-weight: bold;
+  }
+
+  .starsIcon {
+    color: #82b864;
+  }
+
+  .locationBlock {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .bluePing {
+    margin-right: 5px;
+  }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    background-color: #0074c7;
+    font-weight: bold;
+    color: #f1f8fc;
+    border-radius: 15px;
+  }
+}
+
+.monthWorker {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 425px) {
-  .smallBorder {
+  .smallBorder1 {
     height: 10px;
     width: 2.5rem;
   }
 
+  .smallBorder2 {
+    height: 8px;
+    width: 2rem;
+  }
+
   .step {
     margin-top: 25px;
+
+    .stepTitle {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .stepPhone1 {
+      height: 150px;
+      object-fit: contain;
+      margin-top: 20px;
+    }
+
+    .stepPhone2 {
+      height: 700px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepPhone3 {
+      height: 450px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepPhone4 {
+      height: 150px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
 
   .stepNumber {
     font-size: 1.3rem;
   }
 
-  .stepTitle {
-    text-align: center;
-    font-size: 1rem;
-  }
+  .card {
+    margin-top: 50px;
 
-  .stepPhone1 {
-    height: 200px;
-    width: 80%;
-    margin-top: 20px;
-  }
+    .card-body {
+      line-height: 20px;
 
-  .stepPhone2 {
-    height: 1100px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+      .avatarIcon {
+        height: 150px;
+      }
 
-  .stepPhone3 {
-    height: 600px;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  .stepPhone4 {
-    height: 200px;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
+      .bluePing {
+        height: 25px;
+        width: 25px;
+      }
+    }
   }
 
   .stepTablet,
@@ -79,49 +154,76 @@
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  .smallBorder {
+  .smallBorder1 {
     height: 10px;
     width: 2.8rem;
   }
 
+  .smallBorder2 {
+    height: 8px;
+    width: 2.2rem;
+  }
+
   .step {
     margin-top: 25px;
+
+    .stepTitle {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .stepTablet1 {
+      height: 300px;
+      object-fit: contain;
+      margin-top: 20px;
+    }
+
+    .stepTablet2 {
+      height: 500px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepTablet3 {
+      height: 650px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepTablet4 {
+      height: 250px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
 
   .stepNumber {
     font-size: 1.5rem;
   }
 
-  .stepTitle {
-    text-align: center;
-    font-size: 1.2rem;
+  .row {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .stepTablet1 {
-    height: 400px;
-    width: 80%;
-    margin-top: 20px;
-  }
+  .card {
+    margin-top: 80px;
 
-  .stepTablet2 {
-    height: 1000px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+    .card-body {
+      line-height: 15px;
 
-  .stepTablet3 {
-    height: 950px;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+      .avatarIcon {
+        height: 170px;
+      }
 
-  .stepTablet4 {
-    height: 400px;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
+      .bluePing {
+        height: 25px;
+        width: 25px;
+      }
+    }
   }
 
   .stepPhone,
@@ -131,49 +233,76 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1048px) {
-  .smallBorder {
+  .smallBorder1 {
     height: 10px;
     width: 3rem;
   }
 
+  .smallBorder2 {
+    height: 8px;
+    width: 2.4rem;
+  }
+
   .step {
     margin-top: 25px;
+
+    .stepTitle {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+
+    .stepDesktop1 {
+      height: 150px;
+      object-fit: contain;
+      margin-top: 20px;
+    }
+
+    .stepDesktop2 {
+      height: 350px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepDesktop3 {
+      height: 800px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepDesktop4 {
+      height: 250px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
 
   .stepNumber {
     font-size: 1.6rem;
   }
 
-  .stepTitle {
-    text-align: center;
-    font-size: 1.3rem;
+  .row {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .stepDesktop1 {
-    height: 250px;
-    width: 90%;
-    margin-top: 20px;
-  }
+  .card {
+    margin-top: 80px;
 
-  .stepDesktop2 {
-    height: 520px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+    .card-body {
+      line-height: 20px;
 
-  .stepDesktop3 {
-    height: 1100px;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+      .avatarIcon {
+        height: 190px;
+      }
 
-  .stepDesktop4 {
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
+      .bluePing {
+        height: 25px;
+        width: 25px;
+      }
+    }
   }
 
   .stepPhone,
@@ -183,49 +312,76 @@
 }
 
 @media screen and (min-width: 1049px) {
-  .smallBorder {
+  .smallBorder1 {
     height: 10px;
     width: 3.2rem;
   }
 
+  .smallBorder2 {
+    height: 8px;
+    width: 2.6rem;
+  }
+
   .step {
     margin-top: 25px;
+
+    .stepTitle {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    .stepDesktop1 {
+      height: 200px;
+      object-fit: contain;
+      margin-top: 20px;
+    }
+
+    .stepDesktop2 {
+      height: 400px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepDesktop3 {
+      height: 700px;
+      object-fit: contain;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .stepDesktop4 {
+      height: 250px;
+      width: 35%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
 
   .stepNumber {
     font-size: 1.7rem;
   }
 
-  .stepTitle {
-    text-align: center;
-    font-size: 1.4rem;
+  .row {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .stepDesktop1 {
-    height: 300px;
-    width: 60%;
-    margin-top: 20px;
-  }
+  .card {
+    margin-top: 80px;
 
-  .stepDesktop2 {
-    height: 550px;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+    .card-body {
+      line-height: 30px;
 
-  .stepDesktop3 {
-    height: 900px;
-    width: 35%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+      .avatarIcon {
+        height: 200px;
+      }
 
-  .stepDesktop4 {
-    height: 250px;
-    width: 35%;
-    margin: 0 auto;
-    margin-top: 20px;
+      .bluePing {
+        height: 25px;
+        width: 25px;
+      }
+    }
   }
 
   .stepPhone,

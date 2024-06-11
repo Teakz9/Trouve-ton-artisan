@@ -8,13 +8,10 @@ body {
   font-family: "Graphik", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   color: #00497c;
   font-weight: bolder;
   margin-top: 5vw;
   margin-left: 30px;
-}
-
-main {
-  line-height: 100px;
 }
