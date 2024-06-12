@@ -3,6 +3,8 @@
   src: url(./font/GRAPHIK-REGULAR-TRIAL.OTF) format("opentype");
 }
 
+$titleColor: #00497c;
+
 body {
   background-color: #f1f8fc;
   font-family: "Graphik", sans-serif;
@@ -10,7 +12,7 @@ body {
 
 h1,
 h2 {
-  color: #00497c;
+  color: $titleColor;
   font-weight: bolder;
   margin-top: 5vw;
   margin-left: 30px;

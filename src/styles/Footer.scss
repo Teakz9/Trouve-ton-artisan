@@ -1,9 +1,131 @@
 .Footer {
   margin-top: 50px;
   background-color: #0074c7;
+
+  .footerImg {
+    object-fit: contain;
+  }
+
+  .Lyon {
+    color: #f1f8fc;
+  }
+
+  .footerLocation {
+    color: #f1f8fc;
+    display: flex;
+
+    .whitePing {
+      object-fit: contain;
+    }
+  }
+
+  .footerBorder {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f8fc;
+  }
+
+  .legalList {
+    margin: 0 0;
+    padding: 20px 0;
+
+    .legalItem {
+      list-style: none;
+      text-align: center;
+
+      .legalLink {
+        text-decoration: none;
+        color: #f1f8fc;
+      }
+
+      .legalLink:hover {
+        text-decoration: none;
+        color: #384050;
+      }
+    }
+  }
 }
 
-.footerImg {
-  height: 150px;
-  object-fit: contain;
+@media screen and (max-width: 425px) {
+  .footerImg {
+    height: 150px;
+  }
+
+  .address {
+    margin-left: 30px;
+  }
+
+  .whitePing {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .footerBorder {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .footerImg {
+    height: 180px;
+  }
+
+  .address {
+    margin-left: 35px;
+  }
+
+  .whitePing {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .footerBorder {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1048px) {
+  .footerImg {
+    height: 200px;
+  }
+
+  .address {
+    margin-left: 40px;
+  }
+
+  .whitePing {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .footerBorder {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1049px) {
+  .footerImg {
+    height: 200px;
+  }
+
+  .address {
+    margin-left: 40px;
+  }
+
+  .whitePing {
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .footerBorder {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }

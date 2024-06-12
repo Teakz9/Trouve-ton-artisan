@@ -150,7 +150,7 @@ function Accueil() {
           <span className="smallBorder2"></span>
 
           <section className="container">
-            <div className="row">
+            <div className="row cardPosition">
               {topProfiles.map((profile) => (
                 <div
                   className="card col-sm-1 col-md-2 col-xl-3"

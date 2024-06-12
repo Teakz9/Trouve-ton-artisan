@@ -1,5 +1,4 @@
 .smallBorder1 {
-  position: absolute;
   background-color: #00497c;
   margin-left: 30px;
 }
@@ -32,7 +31,7 @@
   margin: 0 auto;
 }
 
-.row {
+.cardPosition {
   display: flex;
   justify-content: center;
 }
@@ -73,6 +72,14 @@
     color: #f1f8fc;
     border-radius: 15px;
   }
+
+  .more:hover {
+    background-color: #384050;
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px rgba(#0074c7, 0.5);
 }
 
 .monthWorker {
@@ -81,6 +88,7 @@
 
 @media screen and (max-width: 425px) {
   .smallBorder1 {
+    display: flex;
     height: 10px;
     width: 2.5rem;
   }
@@ -155,6 +163,7 @@
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .smallBorder1 {
+    display: flex;
     height: 10px;
     width: 2.8rem;
   }
@@ -204,7 +213,7 @@
     font-size: 1.5rem;
   }
 
-  .row {
+  .cardPosition {
     display: flex;
     justify-content: space-around;
   }
@@ -234,6 +243,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1048px) {
   .smallBorder1 {
+    position: absolute;
     height: 10px;
     width: 3rem;
   }
@@ -283,7 +293,7 @@
     font-size: 1.6rem;
   }
 
-  .row {
+  .cardPosition {
     display: flex;
     justify-content: space-around;
   }
@@ -313,6 +323,7 @@
 
 @media screen and (min-width: 1049px) {
   .smallBorder1 {
+    position: absolute;
     height: 10px;
     width: 3.2rem;
   }
@@ -362,7 +373,7 @@
     font-size: 1.7rem;
   }
 
-  .row {
+  .cardPosition {
     display: flex;
     justify-content: space-around;
   }
