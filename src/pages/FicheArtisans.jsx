@@ -13,19 +13,25 @@ import Footer from "../componants/Footer";
 import "../styles/FicheArtisans.scss";
 
 function FicheArtisans() {
+  // Constante qui récupère l'id depuis les paramètres de l'URL
   const { id } = useParams();
+  //Recherche l'artisan qui correspond à l'id dans les données
   const item = datas.find((item) => item.id === id);
 
   useEffect(() => {
+    // Si l'artisan est trouvé
     if (item) {
+      // Récupère le formulaire de contact par son id
       const form = document.getElementById("contactForm");
+      // Ajoute un événement au formulaire pour envoyer un email
       form.addEventListener("submit", function (event) {
-        event.preventDefault();
+        event.preventDefault(); //Empêche l'envoi du formulaire
         setTimeout(() => {
+          //Affiche une alerte au bout d'une seconde
           alert(
             `Votre formulaire a bien été envoyé à ${item.email}, vous recevrez une réponse sous 48 heures !`
           );
-          form.reset();
+          form.reset(); //Réinitialise le formulaire
         }, 1000);
       });
     }
@@ -35,26 +41,32 @@ function FicheArtisans() {
     return <div>Artisan non trouvé</div>;
   }
 
+  // Constante pour générer des étoiles en fonction des notes des profils
   const renderStars = (note) => {
     const stars = [];
     const fullStars = Math.floor(note);
     const hasHalfStar = note % 1 !== 0;
 
+    // Une boucle afin de générer 5 étoiles
     for (let i = 1; i <= 5; i++) {
       if (i <= fullStars) {
+        // Ajoute une étoile pleine si l'indice "i" est inférieur ou égal au nombre d'étoiles pleines
         stars.push(
           <FontAwesomeIcon key={i} icon={faStar} className="starsIcon" />
         );
       } else if (i === fullStars + 1 && hasHalfStar) {
+        //Ajoute une demi étoile si l'indice "i" est juste après le nombre d'étoiles pleines et qu'il y a une demi étoile
         stars.push(
           <FontAwesomeIcon key={i} icon={faStarHalfAlt} className="starsIcon" />
         );
       } else {
+        // Ajoute une étoile vide jusqu'à avoir 5 étoiles
         stars.push(
           <FontAwesomeIcon key={i} icon={farStar} className="starsIcon" />
         );
       }
     }
+    // Permet l'affichage des étoiles
     return stars;
   };
 
