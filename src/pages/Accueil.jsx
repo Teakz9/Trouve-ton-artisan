@@ -13,38 +13,51 @@ import {
 import "../styles/Accueil.scss";
 
 function Accueil() {
+  // Déclare l'état local "topProfiles" avec le mutateur "setTopProfiles"
+  // Initialisé avec le tableau vide
   const [topProfiles, setTopProfiles] = useState([]);
 
+  // Utilise l'effet afin d'exécuter du code après le montage du composant
   useEffect(() => {
+    // Filtre les données "top:" des profils afin de garder ceux qui ont la valeur "true"
     const filteredProfiles = datas.filter((profile) => profile.top === true);
+    //Met à jour l'état "topProfiles" avec les profils filtrés
     setTopProfiles(filteredProfiles);
-  }, []);
+  }, []); // Ici le tableau vide indique que cet effet ne s'exécute qu'une seule fois au montage
 
+  // Constante pour générer des étoiles en fonction des notes des profils
   const renderStars = (note) => {
     const stars = [];
     const fullStars = Math.floor(note);
     const hasHalfStar = note % 1 !== 0;
 
+    // Une boucle afin de générer 5 étoiles
     for (let i = 1; i <= 5; i++) {
       if (i <= fullStars) {
+        // Ajoute une étoile pleine si l'indice "i" est inférieur ou égal au nombre d'étoiles pleines
         stars.push(
           <FontAwesomeIcon key={i} icon={faStar} className="starsIcon" />
         );
       } else if (i === fullStars + 1 && hasHalfStar) {
+        //Ajoute une demi étoile si l'indice "i" est juste après le nombre d'étoiles pleines et qu'il y a une demi étoile
         stars.push(
           <FontAwesomeIcon key={i} icon={faStarHalfAlt} className="starsIcon" />
         );
       } else {
         stars.push(
+          // Ajoute une étoile vide jusqu'à avoir 5 étoiles
           <FontAwesomeIcon key={i} icon={farStar} className="starsIcon" />
         );
       }
     }
+    // Permet l'affichage des étoiles
     return stars;
   };
 
+  // Constante pour changer la route de l'application
   const navigate = useNavigate();
 
+  // Constante permettant de changer la route via l'id du profil, ce qui amènera à la page du profil détaillée
   const handleViewDetails = (id) => {
     navigate(`/ficheArtisans/${id}`);
   };
