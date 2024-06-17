@@ -44,8 +44,8 @@ function Accueil() {
           <FontAwesomeIcon key={i} icon={faStarHalfAlt} className="starsIcon" />
         );
       } else {
+        // Ajoute une étoile vide jusqu'à avoir 5 étoiles
         stars.push(
-          // Ajoute une étoile vide jusqu'à avoir 5 étoiles
           <FontAwesomeIcon key={i} icon={farStar} className="starsIcon" />
         );
       }
