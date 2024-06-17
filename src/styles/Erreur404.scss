@@ -1,0 +1,61 @@
+.errorContent {
+  display: flex;
+  justify-content: center;
+
+  .errorTitle {
+    color: #cd2c2e;
+    margin: 0 0;
+  }
+
+  .errorImg {
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .errorText {
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+
+  .errorImg {
+    height: 100px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .errorText {
+    margin-top: 60px;
+    margin-right: 20px;
+  }
+
+  .errorImg {
+    height: 150px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1048px) {
+  .errorText {
+    margin-top: 60px;
+    margin-right: 20px;
+  }
+
+  .errorImg {
+    height: 180px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1049px) {
+  .errorText {
+    margin-top: 70px;
+    margin-right: 20px;
+  }
+
+  .errorImg {
+    height: 200px;
+    margin-top: 50px;
+  }
+}
